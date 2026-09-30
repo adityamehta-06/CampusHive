@@ -1,0 +1,41 @@
+.banner {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff3d6;
+  border-bottom: 1px solid #eedcb0;
+}
+
+.banner h1 {
+  font-size: 40px;
+  margin-top: 0;
+}
+
+.banner p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.banner .btn {
+  margin: 0 8px;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.steps h3 {
+  margin-top: 0;
+}
+
+@media (max-width: 750px) {
+  .steps {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .banner .btn {
+    margin: 5px;
+  }
+}

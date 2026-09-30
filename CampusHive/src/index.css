@@ -1,0 +1,197 @@
+/* Common styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f5f0;
+  color: #333;
+}
+
+a {
+  color: #c77c00;
+}
+
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 25px 20px;
+  min-height: calc(100vh - 120px);
+}
+
+.page-title {
+  margin-bottom: 5px;
+}
+
+.page-subtitle {
+  color: #666;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f0a500;
+  color: #222;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #d89400;
+}
+
+.btn-green {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-green:hover {
+  background-color: #218838;
+}
+
+.btn-red {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-red:hover {
+  background-color: #c82333;
+}
+
+/* Box */
+.box {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 18px;
+}
+
+/* Card grid */
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.card-list h3 {
+  margin-top: 0;
+}
+
+.card-list p {
+  margin: 6px 0;
+}
+
+/* Status colours */
+.status-available,
+.status-approved {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.status-borrowed,
+.status-rejected {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.status-pending {
+  color: #d89400;
+  font-weight: bold;
+}
+
+.status-returned {
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Forms */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.message {
+  color: #c77c00;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #333;
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* Mobile */
+@media (max-width: 750px) {
+  .card-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card buttons */
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+/* Login / Register */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.auth-box {
+  width: 100%;
+  max-width: 380px;
+}
+
+.auth-box h1 {
+  text-align: center;
+  color: #c77c00;
+  margin-top: 0;
+}
+
+.auth-box h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.auth-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.auth-links {
+  text-align: center;
+  margin: 10px 0 0;
+}
